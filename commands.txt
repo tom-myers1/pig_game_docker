@@ -1,0 +1,8 @@
+// build image - where image name will be pig_game
+
+docker build -t=pig_game .
+
+// run image - exposing over port 3000
+// -i stands for interactive mode and -t will allocate a pseudo terminal
+
+docker run -p 3000:3000 -i -t pig_game
